@@ -15,6 +15,22 @@ A Persona-5-inspired multiplayer tower-defense game I built on Roblox (Luau). Th
 ![Hideout](screenshots/hideout.jpg)
 *Hideout: deck, persona details, upgrade paths.*
 
+### Tower and ability effects
+
+The effects were reworked so every persona and ability has its own look (Blender-made meshes plus Roblox particle effects).
+
+![Tower blast](screenshots/vfx-blast.jpg)
+*Six towers firing in the Vault of Greed: a fire burst, an ice aura and a critical hit, all on the same lane.*
+
+![Laser volley](screenshots/vfx-lasers.jpg)
+*A beam volley and a pink pulse crossing the road while a swarm closes in.*
+
+![Melee burst](screenshots/vfx-melee-burst.jpg)
+*Melee towers and the player's own attack landing in the same wave.*
+
+![Heal and crit](screenshots/vfx-heal-and-crit.jpg)
+*A heal ring, a pink slash and a crit number during a later wave.*
+
 ## What it is
 - 15 levels ("Palaces"), each with its own map, boss, enemy mix, and rule modifier.
 - 9 playable characters ("Phantom Thieves"), each with a passive and a special active ability.
