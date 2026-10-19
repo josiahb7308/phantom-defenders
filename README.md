@@ -4,6 +4,17 @@ A Persona-5-inspired multiplayer tower-defense game I built on Roblox (Luau). Th
 
 > Built with AI-assisted coding tools. I directed the design, tested it, tuned it from playtester feedback, and wrote the analysis tooling below.
 
+## Screenshots
+
+![In a run](screenshots/in-run.jpg)
+*A run in progress: tower hit effects, the next-wave card, and the thief active-ability button (bottom right).*
+
+![Velvet Rolls](screenshots/rolls.jpg)
+*The roll screen with live drop rates per tier.*
+
+![Hideout](screenshots/hideout.jpg)
+*Hideout: deck, persona details, upgrade paths.*
+
 ## What it is
 - 15 levels ("Palaces"), each with its own map, boss, enemy mix, and rule modifier.
 - 9 playable characters ("Phantom Thieves"), each with a passive and a special active ability.
