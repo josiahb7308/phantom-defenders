@@ -108,3 +108,24 @@ Settings kept: Abyss 2.2, Doubt 2.6, Time 4.7, Tides 7.4, Dominion 7.9, Carnival
 | Echoes | 9.0 | WIN 5/15 | 57.3k | 36.8k |
 | Archipelago | 9.6 | WIN 15/15 | 65.1k | 38.8k |
 Notes: the bot has max-level dev personas, a level-25 hero and perfect tower placement, so it is stronger than a real player; flawless wins from Tides on leave room to raise health further once real playtest data exists. Earlier in the night Sloth lost at wave 10 once at the same settings it later won with (bot variance). Doubt at 2.8 lost at wave 15.
+
+## Full pass with the new towers, upgrades and heroes, no items (2026-10-21)
+Bot: Masaru + assassins, 2x speed, full spend. This pass used NO heart charms or smoke bombs (winning must come from towers, upgrades, the hero and the thief ability). The deck picker now counts Zone and Beam towers.
+| Palace | Result | Earned | Spent |
+|---|---|---|---|
+| Pride | WIN 20/20 hearts | 11.6k | 9.5k |
+| Greed | LOSS wave 5 (hearts 20, 12, 7, 7, 7) | 2.0k | 2.0k |
+| Envy | WIN 20/20 | 16.7k | 16.1k |
+| Wrath | WIN 12/15 | 16.9k | 16.6k |
+| Sloth | WIN 15/15 | 52.8k | 29.9k |
+| Lust | WIN 15/15 | 18.2k | 18.1k |
+| Gluttony | WIN 15/15 | 37.6k | 27.5k |
+| Abyss | WIN 1/15 | 35.0k | 33.5k |
+| Time | WIN 15/15 | 41.9k | 24.3k |
+| Doubt | LOSS wave 9 | 6.0k | 5.5k |
+| Tides | WIN 15/15 | 42.3k | 40.5k |
+| Dominion | WIN 15/15 | 52.4k | 37.1k |
+| Carnival | WIN 15/15 | 49.8k | 44.9k |
+| Echoes | WIN 15/15 | 57.2k | 41.0k |
+| Archipelago | WIN 15/15 | 64.0k | 58.1k |
+Reading: with the new towers most palaces became flawless wins (too easy), while Greed and Doubt are too hard without items. Greed's first loss traced to Ghoul (a new Zone tower) being too weak to open with; it now always slows enemies in its pools and hits harder. Provisional tuning applied afterwards: enemy health x -20% for Greed, Doubt -23%; +20-30% for the flawless palaces (Envy 2.2, Sloth 1.4, Lust 3.9, Gluttony 3.9, Time 6.0, Tides 9.0, Dominion 9.6, Carnival 10.0, Echoes 10.6, Archipelago 11.2) and the Slumber Queen base health 38k to 55k. A verification pass is still needed.
