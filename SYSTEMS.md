@@ -6,7 +6,7 @@ Short write-ups of how each part of Phantom Defenders works. The game is a Perso
 A run is a sequence of waves through one of 15 themed "palaces" (15 to 20 waves each, Normal and Hard difficulty, plus an endless mode). Each palace has its own map, enemy mix, health scaling and a boss wave. Enemies that reach the end cost lives (bosses cost many), and the run is lost at zero. Health, income and boss strength are tuned per palace with a balance bot (see `tools/`).
 
 ## Towers (Personas)
-Players equip a deck of up to six Persona towers (77 in total). Each has an element, a role (single shot, area, chain, barrage, buff, curse, income, and the newer Longshot, Zone and Beam types), three upgrade paths and evolutions during the run. Placement is validated on the server (distance to the path, spacing, special pads and pools), so a modified client cannot place towers illegally.
+Players equip a deck of up to six Persona towers (77 in total, each deck tower with its own 3-path, 5-tier upgrade tree). Each has an element, a role (single shot, area, chain, barrage, buff, curse, income, and the newer Longshot, Zone and Beam types), three upgrade paths and evolutions during the run. Placement is validated on the server (distance to the path, spacing, special pads and pools), so a modified client cannot place towers illegally.
 
 ## Weakness and All-Out
 Hitting an enemy's weak element deals extra damage, briefly stuns it and fills the All-Out meter; resisted elements deal less. At a full meter the player can trigger an All-Out Attack that stuns and heavily damages everything on screen, with reduced effect on bosses.
