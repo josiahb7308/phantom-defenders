@@ -11,7 +11,9 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 - **Persona previews:** previews in the hideout and market now fade in whole once their meshes load instead of popping in piece by piece.
 - **Lobby look and sound:** softer tree colors and lighting, removed the large "Phantom Lounge" sign, new lobby music.
 - **The Hideaway (safe room):** a large indoor lounge with a coffee-and-curry bar, a balcony and fire pit over the city skyline, working couches and booths, a stage with a jukebox, and a bartender. Players earn a slow trickle of Spins for staying, capped per day, with an idle-kick workaround so people can stay. About 750 parts, so it has little effect on performance.
-- **Docs:** added `SYSTEMS.md`, a short write-up of each game system.
+- **Towers:** added three new tower types: Longshot (map-spanning sniper), Zone (lingering pools on the path) and Beam (a beam that ramps up while locked on), each with its own 3-path, 5-tier upgrade tree; seven personas moved onto them. Tier 5 is now rare: a player can have only one tier-5 copy of each persona at a time.
+- **Upgrade audit:** measured the existing upgrade data: 54 of 77 personas have their own trees and 665 of 810 tiers change behavior; the remaining numbers-only tiers and shared-tree personas are the next cleanup.
+- **Docs:**  added `SYSTEMS.md`, a short write-up of each game system.
 - **Lobby hub (six stations):** a Today board, a challenge giver, a team-finder board, a leaderboard wall, a trophy case, and a practice range that runs a free-play session with your own deck and no rewards.
 
 ## 2026-10-20
