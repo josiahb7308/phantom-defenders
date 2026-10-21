@@ -11,6 +11,7 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 - **Persona previews:** previews in the hideout and market now fade in whole once their meshes load instead of popping in piece by piece.
 - **Lobby look and sound:** softer tree colors and lighting, removed the large "Phantom Lounge" sign, new lobby music.
 - **The Hideaway (safe room):** a large indoor lounge with a coffee-and-curry bar, a balcony and fire pit over the city skyline, working couches and booths, a stage with a jukebox, and a bartender. Players earn a slow trickle of Spins for staying, capped per day, with an idle-kick workaround so people can stay. About 750 parts, so it has little effect on performance.
+- **Docs:** added `SYSTEMS.md`, a short write-up of each game system.
 - **Lobby hub (six stations):** a Today board, a challenge giver, a team-finder board, a leaderboard wall, a trophy case, and a practice range that runs a free-play session with your own deck and no rewards.
 
 ## 2026-10-20

@@ -46,6 +46,9 @@ The effects were reworked so every persona and ability has its own look (Blender
 - **Level design tooling:** a PowerShell + embedded C# analyzer that measures how much of an enemy path each tower position covers, used to compare track layouts before building them (see `tools/`).
 - **Persistence:** player data with save retries and session locking.
 
+## Systems
+Short write-ups of every major system (run loop, towers, heroes, interrogation, lobby hub, safe room, tooling): see [SYSTEMS.md](SYSTEMS.md).
+
 ## Level analysis tool
 `tools/palace_designer.ps1` takes a lane (list of waypoints), candidate pools and pads, and reports tower coverage at several ranges, clusters of strong distinct spots, and warnings, then renders a PNG. `tools/design_final_three.ps1` uses it to produce the final layouts for three levels.
 
