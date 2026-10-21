@@ -55,6 +55,11 @@ Example output (lane in red, high-coverage spots highlighted):
 ![Echoes layout](images/final_Echoes.png)
 ![Archipelago layout](images/final_Archipelago.png)
 
+## Balance bot
+`tools/balance_bot.lua` is a Studio-only test bot that plays the palaces for me: it picks a deck, places towers on the best-covered spots, upgrades, shoots, uses the hero and thief abilities, answers the post-boss interrogation, and records lives per wave, yen earned and yen spent. Run it with a plan of palaces and read the results back; `tools/balance_bot_results.md` has the tables from the overnight tuning passes.
+
+What it found: two palaces (Despair and Doubt) were unwinnable even at low enemy health because their two lanes sat about 80 studs apart, so no tower could cover both. Pulling the lanes together fixed it, and enemy health could then be tuned per palace until a full-spend run wins with a few hearts to spare.
+
 ## Tech
 Luau (Roblox), PowerShell, C# (embedded in PowerShell), Roblox Studio.
 
