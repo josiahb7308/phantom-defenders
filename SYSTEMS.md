@@ -45,7 +45,7 @@ A coach card walks a brand-new player through movement, the HUD, placing towers,
 Player data saves with retries and session locking. All server remotes were audited for input validation (NaN, range and ownership checks). Analytics track the onboarding funnel and run events (start, end, wave reached, quits) to find where new players drop off.
 
 ## Mobile
-The UI scales to the viewport, windows shrink to fit phones, and run controls are available as touch buttons. Layout was checked at phone sizes in Studio; testing on real devices is still on the to-do list.
+The UI scales to the viewport, windows shrink to fit phones, and run controls are available as touch buttons that size from the screen height and sit clear of the HUD panels. Phones also get a lighter render path: no world shadows, fewer particles, far-away animation skipped, and the lobby and unused palaces detached during a run. Enemies are built as one moving root with welded parts, which keeps network traffic low for everyone. All of this was checked in Studio (including a forced phone mode); testing on real devices is still on the to-do list.
 
 ## Tools
 - `tools/palace_designer.ps1`: measures how much of an enemy path each tower spot covers, to compare track layouts before building them.
