@@ -129,3 +129,51 @@ Bot: Masaru + assassins, 2x speed, full spend. This pass used NO heart charms or
 | Echoes | WIN 15/15 | 57.2k | 41.0k |
 | Archipelago | WIN 15/15 | 64.0k | 58.1k |
 Reading: with the new towers most palaces became flawless wins (too easy), while Greed and Doubt are too hard without items. Greed's first loss traced to Ghoul (a new Zone tower) being too weak to open with; it now always slows enemies in its pools and hits harder. Provisional tuning applied afterwards: enemy health x -20% for Greed, Doubt -23%; +20-30% for the flawless palaces (Envy 2.2, Sloth 1.4, Lust 3.9, Gluttony 3.9, Time 6.0, Tides 9.0, Dominion 9.6, Carnival 10.0, Echoes 10.6, Archipelago 11.2) and the Slumber Queen base health 38k to 55k. A verification pass is still needed.
+
+## 2026-10-28: Hard difficulty and Special Realms (bot at 2x, unlimited spend, hero + thief on)
+Hard = enemy HP x1.8, hearts x0.75, rewards x3. Only two Special Realms exist (Wrath, Sloth). The bot is a rough stand-in for a player.
+
+| Realm | Difficulty | Result | Hearts left | Earned | Spent |
+|---|---|---|---|---|---|
+| Wrath | Normal | WIN | 15/15 | 17,749 | 16,863 (5% unspent) |
+| Sloth | Normal | WIN | 15/15 | 51,845 | 28,731 (45% unspent: too generous) |
+| Wrath | Hard | WIN (narrow) | 2/15 | 17,077 | 17,055 |
+| Sloth | Hard | LOSS at final boss (w20) | 0 | 35,504 | 34,355 |
+| Pride | Hard | LOSS at wave 10 | 0 | 4,383 | 4,341 |
+| Greed | Hard | LOSS at wave 12 | 0 | 8,589 | 8,198 |
+
+Readings: Wrath is well balanced on both difficulties. Sloth swings from trivial (Normal) to unbeatable (Hard): the Normal yen is too high, the Hard boss is too strong. Pride and Greed on Hard drop several hearts in the first waves and are unwinnable for the bot; the early waves on Hard need an early-wave ease like Abyss/Doubt got (Config.EarlyEase). No values were changed.
+
+Hard, batch 2:
+
+| Realm | Result | Hearts left | Earned | Spent |
+|---|---|---|---|---|
+| Envy | LOSS at wave 5 | 0 | 1,879 | 1,874 |
+| Lust | WIN | 9/11 | 16,883 | 16,412 (3% unspent) |
+| Gluttony | WIN | 9/11 | 34,744 | 30,133 (13% unspent) |
+| Abyss | LOSS at wave 7 | 0 | 3,587 | 3,188 |
+
+Hard, batch 3:
+
+| Realm | Result | Hearts left | Earned | Spent |
+|---|---|---|---|---|
+| Time | LOSS at wave 6 | 0 | 4,094 | 3,837 |
+| Doubt | LOSS at wave 7 | 0 | 4,238 | 4,151 |
+| Tides | WIN (flawless) | 11/11 | 40,804 | 30,168 (26% unspent: too easy for Hard) |
+| Dominion | LOSS at wave 15 (11 hearts to 0 in one wave: a spike) | 0 | 22,497 | 22,116 |
+
+Hard, batch 4:
+
+| Realm | Result | Hearts left | Earned | Spent |
+|---|---|---|---|---|
+| Carnival | WIN (flawless) | 11/11 | 47,679 | 47,208 (1% unspent: good fit) |
+| Echoes | WIN (flawless) | 11/11 | 56,689 | 50,020 (12% unspent) |
+| Archipelago | LOSS at the final boss (wave 20), flawless until then | 0 | 61,009 | 58,674 |
+
+### Hard summary (13 realms + 2 special; bot, 2x speed)
+- Good fit (win, little yen left): Wrath (narrow), Lust, Carnival, Gluttony, Echoes.
+- Too easy: Tides (flawless, 26% unspent).
+- Early-wave loss (waves 5-12): Envy (w5), Time (w6), Doubt (w7), Abyss (w7), Pride (w10), Greed (w12). Same pattern as Abyss/Doubt on Normal earlier: the first waves on Hard hit too hard for the economy. EarlyEase is the existing lever.
+- Late spike / boss loss: Dominion (w15, 11 hearts to 0 in one wave), Archipelago (boss), Sloth (boss).
+- Special realms on Normal: Wrath good, Sloth far too generous (45% unspent).
+- Caveats: one run per realm/difficulty, a bot that never plays like a person, 2x speed. Treat as a map of where to look, not exact numbers. No game values were changed.
