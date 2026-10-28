@@ -177,3 +177,10 @@ Hard, batch 4:
 - Late spike / boss loss: Dominion (w15, 11 hearts to 0 in one wave), Archipelago (boss), Sloth (boss).
 - Special realms on Normal: Wrath good, Sloth far too generous (45% unspent).
 - Caveats: one run per realm/difficulty, a bot that never plays like a person, 2x speed. Treat as a map of where to look, not exact numbers. No game values were changed.
+
+### 2026-10-28 tuning attempt (reverted)
+Tried lowering Hard's share of extra enemy health (`Config.HardEase`: Pride .6, Envy .35, Greed/Abyss/Doubt/Time .3, Dominion .65). Result: Envy still lost at wave 5, Time at wave 8, Doubt at wave 7, Abyss at wave 5. Tried Hard enemy speed 1.0 instead of 1.12: Envy and Abyss still lost at wave 5. Neither lever helps, so both edits were reverted (Config is back to the published values).
+
+Control run on Normal (Envy): LOSS at wave 5 (earned 2,363). So the early loss is NOT a Hard problem. The Envy wave recipe (also used by Sloth, Abyss, Doubt, Archipelago) has a heavy wave 5 (about 9,800 HP Hollow, nine Phantoms, three Shard Mothers) that the bot fails now. Envy used to be a flawless bot win (2026-10-20), so something regressed since: most likely the tower-type/upgrade rewrite or the bot's deck/placement choices. Greed on Normal is fine (20/20 hearts at wave 12), so Greed's Hard loss (wave 12) IS Hard-specific.
+
+Next steps to look at (not done): (1) check what the bot's deck and spots are on Envy and whether Phantoms (stealth/phase) need a revealing tower the bot lacks; (2) if a real player can't beat Envy wave 5 with a normal deck, that is a real regression to fix in `Config.BuildWave` / `HpMult` for the Envy recipe; (3) only then re-tune Hard.
