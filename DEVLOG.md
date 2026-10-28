@@ -5,6 +5,7 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 ## 2026-10-28
 - **More phone layouts:** Daily Rewards (seven day cards in a row, big claim button), Gem Shop (tabs for gem and spin packs with 46px price buttons), Challenges (82px rows, big START buttons) and the first-time Awakening (two roll panels, 40px roll buttons). A phone tap-target sweep found nothing under 34px in any window; small HUD buttons already get a 40px touch pad. Console clean in a lobby session.
 - **PLAY and ROLL quick buttons:** two always-visible buttons next to MENU in the lobby (PLAY opens the Realm Gate, ROLL opens Fortune Rolls with a gold badge showing unspent spins), so the two things we most want players to use are one tap away. Idea from a friend's playtest.
+- The PLAY and ROLL buttons sit above MENU (hidden while the menu list is open). In runs on phones, the hero panel now stacks under the thief ability card's real bottom edge instead of a fixed spot, so the two no longer overlap. Touch placement code reviewed: drag from the hotbar, spot held above the finger and snap-to-valid were already in place.
 - Drafted a Creator Hub checklist and Starter Pack / VIP designs (`CREATOR_HUB_CHECKLIST.md`, outside the repo). Real-phone testing is still the main gap.
 
 ## 2026-10-26
