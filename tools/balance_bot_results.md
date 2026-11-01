@@ -255,3 +255,16 @@ Run-to-run swings are large (Time went wave 8, 18, 6), so Hard for Abyss, Time a
 - Doubt pads: added (-34,-46), (-34,-18), (-34,10), (-34,42)
 - HardEase: Abyss 0.25, Doubt 0.2, Time 0.2 (was 0.45, 0.4, 0.5)
 - Bot set back to `human = true`; ZZ_BalanceBot is still in StarterPlayerScripts (disabled) and must be deleted before the final publish.
+
+## 2026-11-01 (afternoon): Hard re-check with perfect play
+
+The human-like bot already loses Doubt on Normal, so Hard for the short-lane realms was re-run with perfect play (`human = false`), the same way Normal was validated.
+
+| Realm | Bot | Hard result |
+|---|---|---|
+| Time | human-like | WIN, 2 hearts, 20/20 (an earlier run lost at wave 4: very noisy) |
+| Abyss | perfect play | WIN, 5 hearts, 96% of yen spent |
+| Doubt | perfect play | WIN, 3 hearts, about 25% unspent |
+
+Change: `Config.HardSpeedEase = { Abyss = 0.3, Doubt = 0.3 }`, so the short-lane realms get 30% of the Hard speed bonus (Hard speed is 1.12). It is read in ServerScriptService.Game where enemy speed is built. Backups: Config_pre_hardspeed, Game_pre_hardspeed.
+Still saved only (not published); ZZ_BalanceBot is back to `human = true` and must be deleted before the final publish.

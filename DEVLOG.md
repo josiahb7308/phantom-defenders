@@ -2,6 +2,12 @@
 
 A dated record of what changed each day. The game itself lives in a Roblox place (scripts are not in this repo), so this log and `tools/` are the public record of the work.
 
+## 2026-11-01 (afternoon)
+- **Hard balance (saved in the place, not published):** re-checked the three unresolved realms with perfect play. Abyss wins with 5 hearts (96% of yen spent), Doubt wins with 3 hearts (about 25% unspent), and Time wins with the human-like bot (2 hearts; one earlier run lost at wave 4, so Hard is noisy). The change was `Config.HardSpeedEase` (Abyss and Doubt get 30% of Hard's speed bonus, since their lanes are short).
+- **Phone layouts:** Trophy case and Titles now have compact phone windows; the Collection tab's wide text lines wrap or trim on phones. The Realm Gate phone list was already fine.
+- **Polish and performance:** rapid-fire sound effects now have a minimum gap per sound so busy waves cannot create hundreds of Sound objects; tower name tags are fitted to their box so long names no longer pile up. The ability and hit effects were already capped (live-part and per-hit limits).
+- Details are in `tools/balance_bot_results.md`.
+
 ## 2026-11-01
 - **Balance (saved in the place, not published):** reran the bot on Normal with the human-like bot and with perfect play. Echoes lost to its Golem wave (health 10.6 to 9.0; now wins with 15 hearts). Dominion's first waves were too hard (early-wave ease 0.5, health 9.6 to 7.5; perfect play wins with 6% yen unspent, the human-like bot still loses). Doubt was unwinnable even for perfect play because its lanes are only 383 and 264 studs long, so its enemies now walk at 0.75x speed (new `Config.RealmSpeed`), health 2.0 to 1.3, and four pads were added along its left lane (perfect play wins with 28% unspent). Sloth at 0.85 wins comfortably.
 - **Hard:** perfect play wins Greed, Sloth and Archipelago. Abyss, Time and Doubt still lose after three rounds of easing (Hard's extra health lowered for each; Abyss also walks at 0.85x speed). Results swung a lot between runs, so Hard for those three is unresolved.
