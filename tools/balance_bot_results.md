@@ -190,3 +190,68 @@ Next steps to look at (not done): (1) check what the bot's deck and spots are on
 - Wave 5 (heavy) has one Hollow Knight (2000 base HP, leaks 10 hearts); Greed's heavy wave has one Golem (1700 HP, leaks 10), similar in size and the bot beats Greed. The Envy PHASE waves (wave 6: 14 fast Phantoms, 3 Wraiths, reflectors) cost 10 hearts at once.
 - Cheap towers (<= 520 yen in-run) with the right elements (Fire, Psy, Bless) have very low damage (14-17/s); the strong ones cost 640-1000. Elec Chain towers (Titania 330 / 95 dps, CuChulainn 470 / 96 dps) are the best affordable picks.
 - Conclusion: Envy-recipe realms (Envy, Sloth, Abyss, Doubt, Archipelago) are likely too hard in waves 5-9 for the early economy, or the bot's deck is unsuitable. Only a human playtest of Envy on Normal can tell which. Suggested: have someone try Envy wave 5-9 with a normal deck; if they struggle, ease Envy's PHASE waves (fewer Phantoms) and re-measure.
+
+## 2026-10-28 (later): human-like bot, Normal difficulty
+The bot now has: reaction delay 0.7-1.5 s, picks one of the top 4 spots instead of the best, 15% missed aim, no free hero levels, uses All-Out when full (cheats kept: all phantoms unlocked, invulnerable character). Switch: `_G.BOT_CFG.human = false` gives the old perfect mode.
+Tuning applied (Config, NOT yet published): Envy REALM_HP 2.2 -> 1.4 and EarlyEase Envy 0.6; Envy-recipe waves 6-9 are 20% smaller; Hollow Knight leak 10 -> 6; Abyss REALM_HP 2.2 -> 1.5; Sloth REALM_HP 1.4 -> 0.85 and EarlyEase Sloth 0.6.
+
+| Realm | Result | Hearts left | Earned | Spent | Reading |
+|---|---|---|---|---|---|
+| Envy | WIN | 18/20 | 16,055 | 14,909 (7% unspent) | good |
+| Abyss | WIN | 1/15 | 35,683 | 33,505 (6% unspent) | on target |
+| Sloth | WIN at 0.7 (flawless, 28% unspent); LOSS at wave 10 at 1.0 | | | | settled at 0.85, to re-check |
+| Doubt | LOSS at wave 6 (even at HP 0.9) | 0 | 3,670 | 3,620 | layout problem, not health; reverted to 2.0 |
+| Archipelago | WIN | 9/15 | 61,508 | 40,135 (35% unspent) | a bit easy |
+| Pride | WIN | 10/20 | 11,700 | 10,780 (8% unspent) | good |
+| Greed | WIN | 20/20 | 16,658 | 15,060 (10% unspent) | slightly easy |
+| Wrath | WIN | 11/15 | 18,635 | 17,064 (8% unspent) | good |
+| Lust | WIN | 15/15 | 17,645 | 17,524 (<1% unspent) | strong win, spending everything |
+| Gluttony | WIN | 9/15 | 35,169 | 29,464 (16% unspent) | good |
+
+## 2026-10-30: human-like bot, Normal, full spend (tuning unpublished)
+
+| Palace | Result | Hearts | Earned / spent |
+|---|---|---|---|
+| Time | WIN 20/20 | 7 | 44.9k / 24.5k |
+| Tides | WIN 20/20 | 15 | 42.3k / 29.1k |
+| Dominion | LOSS wave 10 | 0 | 11.4k / 11.0k |
+| Carnival | WIN 20/20 | 15 | 50.1k / 35.1k |
+| Echoes | LOSS wave 15 | 0 | 26.7k / 25.9k |
+
+Notes: Dominion lost 10 hearts at wave 6 and earned far less than other palaces (suspect layout or income, like Doubt). Echoes held 15 hearts to wave 15 then collapsed (earlier perfect-bot run won). Still to do: Sloth at 0.85, Doubt layout, Hard re-run.
+
+## 2026-11-01: Normal tuning round and Hard round 2-3 (saved in the place, not published)
+
+Perfect play (`human = false`) unless noted. "Unspent" is the share of earned yen left at the end.
+
+### Normal
+| Palace | Setting | Result |
+|---|---|---|
+| Echoes | health 10.6 to 9.0 | WIN 20/20, 15 hearts, earned 59.8k / spent 43.2k (human-like bot) |
+| Dominion | health 9.6 to 7.5, EarlyEase 0.5 | WIN 20/20, 15 hearts, 53.7k / 50.4k (6% unspent). Human-like bot still loses at wave 10 (10 hearts lost to the wave-5 Golem). |
+| Sloth | 0.85 | WIN 20/20, 15 hearts, 50.7k / 29.9k (about 40% unspent, easy) |
+| Doubt | health 2.0 to 1.3, RealmSpeed 0.75, four left-lane pads | WIN 20/20, 15 hearts, 41.1k / 29.6k (28% unspent) |
+
+Doubt history (all perfect play, all losses before the speed change): health 2.0 wave 9; 1.6 wave 8; 1.6 plus pads wave 12; 1.3 plus pads wave 10; free placement wave 9; health 1.0 wave 9. Doubt's lanes are 383 and 264 studs long (Sloth 614, Time 1186), which is why health alone could not fix it.
+
+Human-like bot (Normal): Time WIN 7 hearts, Tides WIN 15, Carnival WIN 15, Echoes WIN after tuning; Dominion, Sloth and Doubt lost early while earning very little (3-11k), so those results mostly show the bot's limits.
+
+### Hard (perfect play)
+| Palace | Round 1 | Round 2 | Round 3 |
+|---|---|---|---|
+| Greed | WIN | | |
+| Sloth | WIN, 11 hearts | | |
+| Archipelago | WIN, 11 hearts | | |
+| Abyss | loss wave 7 | loss wave 6 (HardEase 0.25) | loss wave 9 (plus RealmSpeed 0.85) |
+| Time | loss wave 8 | loss wave 18 (HardEase 0.3) | loss wave 6 (HardEase 0.2) |
+| Doubt | loss at the wave-20 boss | loss wave 15 (HardEase 0.3) | loss wave 9 (HardEase 0.2) |
+
+Run-to-run swings are large (Time went wave 8, 18, 6), so Hard for Abyss, Time and Doubt is unresolved. Hard's lowered HardEase values and the Abyss speed are in the place; a real player run is needed before deciding whether to keep them.
+
+### Config changes in the place (backups in ServerStorage.ZZ_Backup: Config_pre_doubtspeed, Config_pre_hardease3, Config_pre_hardease4)
+- REALM_HP: Echoes 9.0, Dominion 7.5, Doubt 1.3
+- EarlyEase: added Dominion = 0.5
+- RealmSpeed (new): Doubt 0.75, Abyss 0.85, applied through `Config.SpeedMult`
+- Doubt pads: added (-34,-46), (-34,-18), (-34,10), (-34,42)
+- HardEase: Abyss 0.25, Doubt 0.2, Time 0.2 (was 0.45, 0.4, 0.5)
+- Bot set back to `human = true`; ZZ_BalanceBot is still in StarterPlayerScripts (disabled) and must be deleted before the final publish.
