@@ -6,6 +6,7 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 - **Hard balance (saved in the place, not published):** re-checked the three unresolved realms with perfect play. Abyss wins with 5 hearts (96% of yen spent), Doubt wins with 3 hearts (about 25% unspent), and Time wins with the human-like bot (2 hearts; one earlier run lost at wave 4, so Hard is noisy). The change was `Config.HardSpeedEase` (Abyss and Doubt get 30% of Hard's speed bonus, since their lanes are short).
 - **Phone layouts:** Trophy case and Titles now have compact phone windows; the Collection tab's wide text lines wrap or trim on phones. The Realm Gate phone list was already fine.
 - **Polish and performance:** rapid-fire sound effects now have a minimum gap per sound so busy waves cannot create hundreds of Sound objects; tower name tags are fitted to their box so long names no longer pile up. The ability and hit effects were already capped (live-part and per-hit limits).
+- **Teaser camera:** added a dev-only `ZZ_TeaserCam` script (delete before the final publish): `workspace:SetAttribute("TEASER", 3)` runs a 15s lobby tour with the HUD hidden; `4` orbits `TEASER_POS`. Recording the clips is still to do.
 - Details are in `tools/balance_bot_results.md`.
 
 ## 2026-11-01
