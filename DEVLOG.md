@@ -2,6 +2,12 @@
 
 A dated record of what changed each day. The game itself lives in a Roblox place (scripts are not in this repo), so this log and `tools/` are the public record of the work.
 
+## 2026-11-01
+- **Balance (saved in the place, not published):** reran the bot on Normal with the human-like bot and with perfect play. Echoes lost to its Golem wave (health 10.6 to 9.0; now wins with 15 hearts). Dominion's first waves were too hard (early-wave ease 0.5, health 9.6 to 7.5; perfect play wins with 6% yen unspent, the human-like bot still loses). Doubt was unwinnable even for perfect play because its lanes are only 383 and 264 studs long, so its enemies now walk at 0.75x speed (new `Config.RealmSpeed`), health 2.0 to 1.3, and four pads were added along its left lane (perfect play wins with 28% unspent). Sloth at 0.85 wins comfortably.
+- **Hard:** perfect play wins Greed, Sloth and Archipelago. Abyss, Time and Doubt still lose after three rounds of easing (Hard's extra health lowered for each; Abyss also walks at 0.85x speed). Results swung a lot between runs, so Hard for those three is unresolved.
+- **TikTok:** set up the account profile and wrote a launch kit and teaser shot lists (outside the repo).
+- Full tables are in `tools/balance_bot_results.md`.
+
 ## 2026-10-28
 - **More phone layouts:** Daily Rewards (seven day cards in a row, big claim button), Gem Shop (tabs for gem and spin packs with 46px price buttons), Challenges (82px rows, big START buttons) and the first-time Awakening (two roll panels, 40px roll buttons). A phone tap-target sweep found nothing under 34px in any window; small HUD buttons already get a 40px touch pad. Console clean in a lobby session.
 - **PLAY and ROLL quick buttons:** two always-visible buttons next to MENU in the lobby (PLAY opens the Realm Gate, ROLL opens Fortune Rolls with a gold badge showing unspent spins), so the two things we most want players to use are one tap away. Idea from a friend's playtest.
