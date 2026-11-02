@@ -9,6 +9,7 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 - **Teaser camera:** added a dev-only `ZZ_TeaserCam` script (delete before the final publish): `workspace:SetAttribute("TEASER", 3)` runs a 15s lobby tour with the HUD hidden; `4` orbits `TEASER_POS`. Recording the clips is still to do.
 - **Sound:** sounds can now list several files and pick one at random (enemy death, shots, tower placement, melee, and the big booms for nukes, quakes and boss slams use two variants); RESIST hits now play a sound (they had none). Checked in Play that every sound file loads and that 30 same-frame deaths play one sound, not 30. Visual review of the ability effects is still limited to a few screenshots.
 - **Fixes:** tower name tags no longer show the rank letter (`[C]`) and use a smaller font. Dash did nothing in runs because the saved key map had Dash on E and Cancel on Y (old test bindings); both now reset to Shift and Q on load (migration in `Settings` sanitize). Verified in Play: Shift in a run gives about 95 studs/second.
+- **Top-left UI:** Roblox's own logo, menu, chat and mic icons covered our buttons on desktop. In a run, the ? help button, SETTINGS and LEAVE RUN now start to the right of those icons (same rule the phone layout already used); in the lobby the crew-member card moved below them.
 - Details are in `tools/balance_bot_results.md`.
 
 ## 2026-11-01
