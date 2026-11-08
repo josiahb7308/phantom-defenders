@@ -7,6 +7,8 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 
 - **More phone menus:** Quests (wider, slimmer rows, 3 quests visible instead of 2), Codes (two-column wide layout instead of a tall window that shrank its text), Team Meeting (bigger tip text and a "CHOOSE A REALM" button for the leader).
 
+- **Armory (phone):** wider window and slimmer rows, about 3 weapons visible instead of 2.
+
 ## 2026-11-01 (afternoon)
 - **Hard balance (saved in the place, not published):** re-checked the three unresolved realms with perfect play. Abyss wins with 5 hearts (96% of yen spent), Doubt wins with 3 hearts (about 25% unspent), and Time wins with the human-like bot (2 hearts; one earlier run lost at wave 4, so Hard is noisy). The change was `Config.HardSpeedEase` (Abyss and Doubt get 30% of Hard's speed bonus, since their lanes are short).
 - **Phone layouts:** Trophy case and Titles now have compact phone windows; the Collection tab's wide text lines wrap or trim on phones. The Realm Gate phone list was already fine.
