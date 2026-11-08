@@ -11,6 +11,9 @@ A dated record of what changed each day. The game itself lives in a Roblox place
 
 - **All phone menus now use the wider window (740x330):** Realm Scout, Partner Bonds, Daily Rewards (everything fits without scrolling), Challenges, Gem Shop, Awakening, Help Desk, Settings, Build Codes, Lobby Map, Today board, Team board, Practice range and Trophy case. Scout and Bonds got a wider list and a wider detail pane.
 
+- **More detail in the phone menus:** the Hideout detail pane now shows each phantom's description, signature move and passive (shorter picture to make room); the Shadow Market detail pane shows the same, so you can see what a phantom does before buying it (for example "every kill pays +¥3").
+- **Note for later:** the saved Master Volume on the test account is 2%, which makes the game sound almost silent; it is a saved setting, not a bug.
+
 ## 2026-11-01 (afternoon)
 - **Hard balance (saved in the place, not published):** re-checked the three unresolved realms with perfect play. Abyss wins with 5 hearts (96% of yen spent), Doubt wins with 3 hearts (about 25% unspent), and Time wins with the human-like bot (2 hearts; one earlier run lost at wave 4, so Hard is noisy). The change was `Config.HardSpeedEase` (Abyss and Doubt get 30% of Hard's speed bonus, since their lanes are short).
 - **Phone layouts:** Trophy case and Titles now have compact phone windows; the Collection tab's wide text lines wrap or trim on phones. The Realm Gate phone list was already fine.
